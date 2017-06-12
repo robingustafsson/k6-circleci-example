@@ -11,7 +11,7 @@ export let options = {
         { duration: "5s", target: 0 }
     ],
     thresholds: {
-        http_req_duration: ["p(95)<500"],
+        http_req_duration: ["p(95)<10"],
         "http_req_duration{staticAsset:yes}": ["p(95)<200"],
         check_failure_rate: ["rate<3"]
     }
